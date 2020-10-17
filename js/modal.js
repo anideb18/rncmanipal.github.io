@@ -195,9 +195,9 @@ var modalInfo = {
   },
 
   28: {
-    title: " Web Rover",
-    members: "Mudit Malpani, Mahesh Kumar",
-    info: "A small surveillance robot with an inbuilt robotic arm and multiple sensing modalities, the bot can be controlled over the internet using an Android app."
+    title: " Sensor Networking",
+    members: "Akhil Jain",
+    info: "We developed a network of Xbees nodes and a software to receive and store data collected from the nodes on a remote computer. The software was developed on C# displayed a graphical representation of the sensor readings connected to the nodes at different locations."
   },
 
   27: {
