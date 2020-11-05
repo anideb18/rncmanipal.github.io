@@ -116,8 +116,47 @@
   transition: all 0.3s ease-in-out;
   color: white;
 }
+.vbutton{
+  
+  border: 3px solid #3ed6ab ;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  
+  
+}
+.vp{
+  color: #eeeeee;
+}
+.vbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
 
-.button:hover{
+.vbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.vbutton:hover span {
+  padding-right: 25px;
+}
+
+.vbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.vbutton:hover{
   background-color: #3ed6ab; ;
   color: #F5F5F5;
   color: black;
@@ -293,7 +332,7 @@ left: 30%;
 
 .others{
 background-color: #ffffff;
-padding:70px 0px 30px;
+padding:70px 0px 70px;
 }
 
 .others .title h1::before{
