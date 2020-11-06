@@ -8,7 +8,7 @@ var modalInfo = {
     5: {
       title: "University Companion System",
       members: "Team Id :1017 Members:1",
-      info: "A platform to make University & Online learning much more efficient with AI as a helping tool, which includes , a system for University use where in attendance is captured using facial recognition , ​Instructor's voice is recorded in .wav file and large audio files are converted to smaller chunks which are then converted to text and further the text is summarised and students can have daily access to the summarised text as well as the recorded audio on an app as well as see their attendance status daily,  the App additionally has  Assignment Submission as well as online hostel punch in option along with a platform for students and teachers to plan and manage their day to day schedule",
+      info: "A Unique platform to make University & Online learning much more efficient with AI as a helping tool, which includes , a system for University use where in attendance is captured using facial recognition , ​Instructor's voice is recorded in .wav file and large audio files are converted to smaller chunks which are then converted to text and further the text is summarised by AI model/ training and students can have daily access to the summarised text as well as the recorded audio on an app as well as see their attendance status daily,  the App additionally has  Assignment Submission as well as online hostel punch in option along with a platform for students and teachers to plan and manage their day to day schedule",
       link:"https://drive.google.com/file/d/1qWzstTIIT8qLBL_zM9STmcZ01ahLnfEY/view?usp=sharing"
     },
     6: {
@@ -19,7 +19,7 @@ var modalInfo = {
     },
     2: {
       title: "Sentiment Analysis",
-      members: "Team Id : 5255 Members:1",
+      members: "Team Id : 5616 Members:1",
       info: "Sentiment analysis website is a NLP based project used to interpret and classify the sentiments of people based on the text collected and produce results in interactive graphical form.  This can be used in understanding reviews on product areas or psychological effects of any event on the community/ group.",
       link:"#"
     },
@@ -27,7 +27,7 @@ var modalInfo = {
       title: "Mask Detection Crowd Control",
       members: "Team Id : 5306 Members:2",
       info: "It’s a convolutional neural networks and open cv based project which detects mask and regulates the crowd according to it.",
-      link:"https://www.google.com/"
+      link:"#"
     },
     7: {
       title: "Non Touch Biometric",
@@ -58,7 +58,49 @@ var modalInfo = {
       members: "Team Id : 5522 Members:1",
       info: "An autonomous differential drive robot which uses simultaneous localisation and mapping to navigate its path to the desired location using Robot Operating System and laser sensor.",
       link:"#"
-    }
+    },
+    12: {
+      title: "Bhramit",
+      members: "Team Id :6031 Members:1",
+      info: "BHRAMIT SMARTPHONE PROJECTOR",
+      link:"#"
+    },
+    13: {
+      title: "Team Dhruv",
+      members: "Team Id :7826 Members:3",
+      info: "hour board",
+      link:"#"
+    },
+    14: {
+      title: "up to the minute",
+      members: "Team Id :1001 Members:3",
+      info: "A platform providing innovative solutions for differently-abled people to help them communicate better in this “new normal”",
+      link:"#"
+    },
+    15: {
+      title: "BEINNOVATIVE",
+      members: "Team Id :3610 Members:1",
+      info: "smart braille",
+      link:"#"
+    },
+    16: {
+      title: "Robo Race",
+      members: "Team Id :2716 Members:3",
+      info: "",
+      link:"#"
+    },
+    17: {
+      title: "A L",
+      members: "Team Id :5454 Members:1",
+      info: "",
+      link:"#"
+    },
+    18: {
+      title: "Dhruv Robotics",
+      members: "Team Id :6135 Members:2",
+      info: "",
+      link:"#"
+    },
   };
   
   // Get the modal
