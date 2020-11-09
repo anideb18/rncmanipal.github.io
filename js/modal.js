@@ -1,5 +1,57 @@
 var modalInfo = {
-  
+  5: {
+    title: "University Companion System",
+    members: "Rushil Jhaveri",
+    info: "A Unique platform to make University & Online learning much more efficient with AI as a helping tool, which includes , a system for University use where in attendance is captured using facial recognition , ​Instructor's voice is recorded in .wav file and large audio files are converted to smaller chunks which are then converted to text and further the text is summarised by AI model/ training and students can have daily access to the summarised text as well as the recorded audio on an app as well as see their attendance status daily,  the App additionally has  Assignment Submission as well as online hostel punch in option along with a platform for students and teachers to plan and manage their day to day schedule",
+  },
+  6: {
+    title: "VeCDeRS ",
+    members: "Neil Tyrone,Shailabh",
+    info: "The Project Vehicle Crash Detection and Reporting System(VeCDeRS) primarily focus is to help save the lives of accident victims the device detects a possible vehicle crash and reports it to the near and dear ones of the owner and also to the authorities the device sends relevant data like the location at the time of the crash to facilitate rescue and aid to the affected parties.",
+    link:"https://github.com/NEType24443/Vehicle-Crash-Detection-System/blob/main/README.md"
+  },
+  2: {
+    title: "Sentiment Analysis",
+    members: "Nihaarika Agarwal,Aditya Prabhu",
+    info: "Sentiment analysis website is a NLP based project used to interpret and classify the sentiments of people based on the text collected and produce results in interactive graphical form.  This can be used in understanding reviews on product areas or psychological effects of any event on the community/ group.",
+    link:"#"
+  },
+  1: {
+    title: "Mask Detection Crowd Control",
+    members: "Sakshi Goenka,Yash Raj ",
+    info: "It’s a convolutional neural networks and open cv based project which detects mask and regulates the crowd according to it.",
+    link:"#"
+  },
+  7: {
+    title: "Non Touch Biometric",
+    members: "Ashwin G,Parth Sirohi",
+    info: "Nobot is an alternative system designed to replace  the current biometric system prevalent in manipal hostels.This Flutter based app allows students to log their attendance in their own space without contacting any other people.",
+    link:"#"
+  },
+  8: {
+    title: "Robo Sphere",
+    members: "Niket , Rishabh ",
+    info: "Robo-Sphere is a 2 pendulum driven omnidirectional spherical robot finding it's use in space explorations, military and surveillance.",
+    link:"#"
+  },
+  9: {
+    title: "Smart Robotic Manipulator",
+    members: "Anant Pandey , Anusha GV",
+    info: "A robotic manipulator which can detect objects with the help of computer vision and then pick - place them accordingly",
+    link:"#"
+  },
+  10: {
+    title: "SLAM-Nav",
+    members: "Bhaavin Jogeshwar",
+    info: "SLAM-Nav is a vision-enabled robot that can traverse through an unknown environment, localize itself and simultaneously build a map of the environment it is in. Such robots can be paired with multiple other devices to be used in cave explorations, search and rescue, navigating-assistant for the blind, and in the hotel industry",
+    link:"#"
+  },
+  11: {
+    title: "Navigators",
+    members: "Shreyas,Anirudh",
+    info: "An autonomous differential drive robot which uses simultaneous localisation and mapping to navigate its path to the desired location using Robot Operating System and laser sensor.",
+    link:"#"
+  },
   60: {
     title: "FPG Bot",
     members: "Kartikeya Pandey, Tanyeem Saifi, Ashwin G",
@@ -26,7 +78,7 @@ var modalInfo = {
 
   56: {
     title: "Cerebro",
-    members: "Gagan, Grissel, Rushil, Darren",
+    members: "Gagan, Grissel, Rushil Jhaveri, Darren",
     info: "Cerebro is a mind controlled wheelchair prototype that can be used to help the paralysed cope with the unanticipated disability. The idea of a brainwave controlled wheelchair is inspired from the work of Toyota Scientist and Research Lab RIKEN. Our version of the brainwave controlled wheelchair uses a MPU6050, a 6-Axis gyro + accelerometer, to determine the direction of movement and uses brainwaves for to control the speed of the wheelchair. Unlike other brain actuated applications, we used a MPU 6050 instead of brainwaves to control the direction of movement as it reduces the number of sensors required for brainwave measurement considerably, thereby reducing the overall cost. We used a Biofeedback headset to measure the brainwaves, using Electroencephalography (EEG). These are forehead bands that measures the brain activity. Using Pantech Solutions developed EEG headset we measured and monitored the Alpha waves, frequency ranging from 7 Hz to 13 Hz, and mapped them to the speed of the wheelchair."
   },
 
@@ -290,7 +342,40 @@ var modal = document.getElementById('preview');
 
 // button that opens the modal
 var btn = document.getElementsByClassName("button");
-
+var btn1 = document.getElementsByClassName("vbutton");
+var span = document.getElementsByClassName("close")[0];
+  
+  // open modal 
+  for(let i = 0; i < btn1.length; i++){
+    btn1[i].addEventListener("click", function() {
+      var project = btn1[i].parentElement;
+      openModal(project);
+    })
+  };
+  
+  function openModal(project){
+    var id = project.id;
+    fillOut(id);
+    modal.style.display = "block";
+    document.getElementsByClassName("modal-content")[0].classList.add("scale");
+  }
+  
+  function fillOut(id){
+    document.getElementById("title").innerHTML = modalInfo[id].title;
+    document.getElementById("info").innerHTML = modalInfo[id].info;
+    document.getElementById("members").innerHTML = modalInfo[id].members;
+  }
+  
+  // close the modal
+  span.onclick = function() {
+      modal.style.display = "none";
+  }
+  
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
 // <span> that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
