@@ -26,6 +26,7 @@
   <div class="navbar">
         <ul>
           <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#ongoing">Ongoing Activities</a></li>
           <li><a href="#about_us">About Us</a></li>
           <li><a href="#our_work">Our Work</a></li>
           <li><a href="team.html">Team</a></li>
@@ -51,6 +52,14 @@
          <h6>Engineering Creativity.</h6>
         </div>
         </div>
+	<!--<dialog id="myDialog" class="centerdia">
+<h3>Check Out Our On Going Activities</h3> 
+<div class="row">
+ <Button><a href="#ongoing">OnGoing Activities</a></Button>
+&nbsp&nbsp&nbsp&nbsp
+ <form method="dialog"><input type="submit" value="Close" /></form>
+</div>
+</dialog> !--->
         <h1>Robotics and Circuits</h1>
         <h4>Manipal Institute of Technology, Manipal</h4>
         <div class="button1">
@@ -189,7 +198,9 @@
 
 
 <!--Start Ongoing Activities-->
-<section class="activities">
+<section id="ongoing" 
+
+class="activities">
   <div class="container">
   <div class="row ">
    <div class="title textcenter">
@@ -202,6 +213,7 @@
           <ul>
             <li>RnC Recruitment Test 2020  </li>
              <p> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKnvWPYmhNpX1ip3vki9JdEm6_47OfY5jnip5ud8Rt2j356A/viewform">Take the Test Now!</a></p>
+<p>The Test Link will be available till 26th November 2020</p>
             <li>MicroMouse</li>
              <p> As one of our flagship projects, we are currently designing our own version of the micromouse for the International Micromouse Challenge.</p>
             <li>Vedanth 10.0</li>
@@ -256,6 +268,7 @@
 </section>  
 <!--End Contact Us-->
 
+
 <!--start footer-->
 <footer>
 <div class="container">
@@ -290,7 +303,30 @@
 
 <script src="js/script.js"></script>
 
-
+<script>
+function openmodal() { 
+  document.getElementById("myDialog").showModal(); 
+} 
+function addEvent(obj, evt, fn) {
+    if (obj.addEventListener) {
+        obj.addEventListener(evt, fn, false);
+    }
+    else if (obj.attachEvent) {
+        obj.attachEvent("on" + evt, fn);
+    }
+}
+addEvent(window,"load",function(e) {
+    addEvent(document, "mouseout", function(e) {
+        e = e ? e : window.event;
+        var from = e.relatedTarget || e.toElement;
+        if (!from || from.nodeName == "HTML") {
+            // stop your drag event here
+            // for now we can just use an alert
+	       openmodal();
+        }
+    });
+});
+</script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
