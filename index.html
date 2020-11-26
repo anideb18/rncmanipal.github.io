@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/responsive.css">    
   <link rel="icon" href="images/logo/hlogo.png" type="image">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
  </head>
 
 <body>
@@ -247,6 +248,7 @@ class="activities">
       <input class="inputbox subject" type="text" id="subject"  name="subject" placeholder="Subject">
       <textarea class="inputbox message" style="resize: none;" id="message" name="message" rows="4" placeholder="Message" required="required" data-error="Message is required."></textarea>
 	<div class="help-block with-errors"></div>
+<div class="g-recaptcha" data-sitekey="6LfjU9cZAAAAAKC7EFDRkxiqJ1bSppkR9ujr6Ytr" data-theme="light" data-size="normal" data-image="image"></div>
       <button class="button3" data-aos="zoom-in" type="submit" value="Send">Send <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
 <div class="alert alert-success success-message" style="display:none;">Form submitted successfully.</div>
     </form>
