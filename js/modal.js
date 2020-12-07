@@ -18,7 +18,7 @@ var modalInfo = {
   },
   1: {
     title: "Mask Detection Crowd Control",
-    members: "Sakshi Goenka,Yash Raj ",
+    members: "Sakshi Goenka,Yash Raj,Saloni Agarwal ",
     info: "It’s a convolutional neural networks and open cv based project which detects mask and regulates the crowd according to it.",
     link:"#"
   },
