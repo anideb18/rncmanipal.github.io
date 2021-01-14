@@ -46,12 +46,12 @@ var modalInfo = {
     info: "SLAM-Nav is a vision-enabled robot that can traverse through an unknown environment, localize itself and simultaneously build a map of the environment it is in. Such robots can be paired with multiple other devices to be used in cave explorations, search and rescue, navigating-assistant for the blind, and in the hotel industry",
     link:"#"
   },
-  11: {
+  /*11: {
     title: "Navigators",
     members: "Shreyas,Anirudh",
     info: "An autonomous differential drive robot which uses simultaneous localisation and mapping to navigate its path to the desired location using Robot Operating System and laser sensor.",
     link:"#"
-  },
+  },*/
   60: {
     title: "FPG Bot",
     members: "Kartikeya Pandey, Tanyeem Saifi, Ashwin G",
