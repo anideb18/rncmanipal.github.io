@@ -101,47 +101,64 @@ var modalInfo = {
       info: "",
       link:"#"
     },
+    20211:{
+      title: "Automated Luggage Handling System (ALS)",
+      members: "Rishabh Dugar",
+      info: "This is a proposed system for airports which aim to reduce the time taken to get the luggage back at arrival to less than a quarter of the time taken presently. This system is autonomous and works like a warehouse, with automated self pickup points. This also reduces the issue of the luggage being misplaced or to have gone missing.",
+      link: "#",
+    },
+    20212:{
+      title: "ACE Drone",
+      members: "Ratnesh, Yash Raj, Abhishek",
+      info: "ACE is a vision-enabled remote-controlled quadrotor capable of traversing in any environment. Data obtained through LiDAR sensing after millions of computations is used to create a real-time 3D map of any terrain. The simultaneous Localization and Mapping (SLAM) technique used ensures accurate mapping of any closed surroundings. The drone can map any unexplored territory and record the events with the camera mounted on it.",
+      link: "#",
+    },
+    20213:{
+      title: "Micro-disinfecting Bot",
+      members: "Sairaj, Hrithik",
+      info: "Micro-disinfecting Bot is semi-autonomous robot that will spray repellents or pesticides or disinfectants in the easily inaccessible areas of a room or a 4-walled structure. It uses LiDAR sensor to map the room, identify the area to be disinfected and uses a magnetometer to get directions to move towards that area. This robot has a metallic alloy body and uses a cylindrical wheel in the front, 4 spherical wheels and 1 rotating disc wheel to move from one place to another. This bot is capable of storing maps and using them for future reference by actively using the Bluetooth Module.",
+      link: "#",
+    }
   };
-  
+
   // Get the modal
   var modal = document.getElementById('preview');
-  
+
   // button that opens the modal
   var btn = document.getElementsByClassName("vbutton");
-  
+
   // <span> that closes the modal
   var span = document.getElementsByClassName("close")[0];
-  
-  // open modal 
+
+  // open modal
   for(let i = 0; i < btn.length; i++){
     btn[i].addEventListener("click", function() {
       var project = btn[i].parentElement;
       openModal(project);
     })
   };
-  
+
   function openModal(project){
     var id = project.id;
     fillOut(id);
     modal.style.display = "block";
     document.getElementsByClassName("modal-content")[0].classList.add("scale");
   }
-  
+
   function fillOut(id){
     document.getElementById("title").innerHTML = modalInfo[id].title;
     document.getElementById("info").innerHTML = modalInfo[id].info;
     document.getElementById("members").innerHTML = modalInfo[id].members;
-    document.getElementById("link").href =modalInfo[id].link;
+    // document.getElementById("link").href =modalInfo[id].link;
   }
-  
+
   // close the modal
   span.onclick = function() {
       modal.style.display = "none";
   }
-  
+
   window.onclick = function(event) {
       if (event.target == modal) {
           modal.style.display = "none";
       }
   }
-  
