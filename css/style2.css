@@ -351,7 +351,7 @@ left: 30%;
 .others .teamcontent .domains{
   background-color: #F5F7F9;
   padding: 30px;
-  flex: 0 0 calc(25% - 40px);
+  flex: 0 0 calc(33% - 40px);
   max-width: 0 0 calc(25% - 40px);
   margin-bottom: 30px;
   border-radius: 1px solid #eeeeee;
