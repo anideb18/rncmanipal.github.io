@@ -294,12 +294,14 @@ left: 30%;
   line-height: 16px;
   letter-spacing: 2px;
   margin: 15px 0 0px;
+  text-align: center;
 }
 
 .board .member h5{
   color: #00153d;
   font-weight: 400;
   font-size: 15px;
+  text-align: center;
 }
 
 .board .member .member_img .social_media{
