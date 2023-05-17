@@ -89,6 +89,31 @@ width: 100%;
 left:0px;
 }
 
+/* Dropdown */
+/* .dropdown {
+  position: relative;
+  display: inline-block;
+} */
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* min-width: 75px;
+  z-index: 1; */
+}
+
+/* Dropdown links */
+/* .dropdown-content a {
+  text-decoration: none;
+  display: block;
+} */
+
+/* Show content when over dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
 .home {
   background-attachment: fixed;
