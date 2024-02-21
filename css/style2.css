@@ -293,7 +293,7 @@ left: 30%;
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 2px;
-  margin: 7px 0 0px;
+  margin: px 0 0px;
   text-align: center;
 }
 
@@ -353,7 +353,7 @@ left: 30%;
 .others .teamcontent .domains{
   background-color: #F5F7F9;
   padding: 30px;
-  flex: 0 0 calc(33% - 40px);
+  flex: 0 0 calc(25% - 40px);
   max-width: 0 0 calc(25% - 40px);
   margin-bottom: 30px;
   border-radius: 1px solid #eeeeee;
