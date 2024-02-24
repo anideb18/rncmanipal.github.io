@@ -1,139 +1,151 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Vedanth</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
-    <style>
 
- /*body,html{
+<head>
+  <meta charset="utf-8">
+  <title>Vedanth</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+  <style>
+    /*body,html{
   padding: 0;
   margin: 0;
   font-family: sans-serif;
   background: #000;
 }*/
-html {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #2d3436;
-  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
-}
-a:link, a:visited {
-  background-color:transparent;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
+    html {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #2d3436;
+      background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    }
 
-#btn {
-  background: #222;
-  height: 50px;
-  min-width: 150px;
-  border: none;
-  border-radius: 10px;
-  color: #eee;
-  font-size: 40px;
-  font-family: 'Cookie', cursive;
-  position: relative;
-  transition: 1s;
-  -webkit-tap-highlight-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding-top: 5px;
-}
+    a:link,
+    a:visited {
+      background-color: transparent;
+      color: white;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
 
-#btn #circle {
-  width: 5px;
-  height: 5px;
-  background: transparent;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  overflow: hidden;
-  transition: 500ms;
-}
+    #btn {
+      background: #222;
+      height: 50px;
+      min-width: 150px;
+      border: none;
+      border-radius: 10px;
+      color: #eee;
+      font-size: 40px;
+      font-family: 'Cookie', cursive;
+      position: relative;
+      transition: 1s;
+      -webkit-tap-highlight-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      padding-top: 5px;
+    }
 
-.noselect {
-  -webkit-touch-callout: none;
-    -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-}
+    #btn #circle {
+      width: 5px;
+      height: 5px;
+      background: transparent;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      overflow: hidden;
+      transition: 500ms;
+    }
 
-#btn:hover {
-  background: transparent;
-}
+    .noselect {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
 
-#btn:hover #circle {
-  height: 50px;
-  width: 150px;
-  left: 0;
-  border-radius: 0;
-  border-bottom: 2px solid #eee;
-}
-.container{
-  text-align: center;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 100%;
-}
-.container span{
-  display: block;
-}
-.text1{
-  color: #f5f5f5;
-  font-size: 60px;
-  font-weight: 700;
-  letter-spacing: 8px;
-  margin-bottom: 40px;
-  background: black;
-  position: relative;
-  animation: text 3s 1;
-}
-.text2{
-  font-size: 20px;
-  color: #ffffffff;
-  
-}
+    #btn:hover {
+      background: transparent;
+    }
 
-@keyframes text {
-  0%{
-    color: black;
-    margin-bottom: -40px;
-  }
-  30%{
-    letter-spacing: 25px;
-    margin-bottom: -40px;
-  }
-  85%{
-    letter-spacing: 8px;
-    margin-bottom: -40px;
-  }
-}
-</style>
-  </head>
-  <body>
+    #btn:hover #circle {
+      height: 50px;
+      width: 150px;
+      left: 0;
+      border-radius: 0;
+      border-bottom: 2px solid #eee;
+    }
 
-<div class="container">
-  <span class="text1">VEDANTH 12.0</span>
-  <span class="text2">C O M I N G _ S O O N</span>
-</div>
-<br>
-<br>
+    .container {
+      text-align: center;
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
 
-  
-   <div id="btn"><a href="project_gallery.html"><span class="noselect">View Vedanth Projects</span><div id="circle"></div></a>
+    .container span {
+      display: block;
+    }
+
+    .text1 {
+      color: #f5f5f5;
+      font-size: 60px;
+      font-weight: 700;
+      letter-spacing: 8px;
+      margin-bottom: 40px;
+      background: black;
+      position: relative;
+      animation: text 3s 1;
+    }
+
+    .text2 {
+      font-size: 20px;
+      color: #ffffffff;
+
+    }
+
+    @keyframes text {
+      0% {
+        color: black;
+        margin-bottom: -40px;
+      }
+
+      30% {
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+      }
+
+      85% {
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <span class="text1">VEDANTH 15.0</span>
+    <span class="text2">C O M I N G _ S O O N</span>
   </div>
-  </body>
+  <br>
+  <br>
+
+
+  <div id="btn"><a href="project_gallery.html"><span class="noselect">View Vedanth Projects</span>
+      <div id="circle"></div>
+    </a>
+  </div>
+</body>
+
 </html>
