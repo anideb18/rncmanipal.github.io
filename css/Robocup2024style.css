@@ -1,0 +1,10 @@
+.info_space {
+    text-align: center;
+    background-color: black;
+}
+
+.info_space h1 {
+    color: white;
+    padding: 20px;
+    display: inline-block;
+}

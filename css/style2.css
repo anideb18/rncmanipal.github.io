@@ -9,39 +9,40 @@
 }
 
 
-.heading .headingcontent{
-  display:flex;
-  flex-wrap:  wrap;
-  align-items:  center;
+.heading .headingcontent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   min-height: 300px;
   padding-top: 180px;
 }
 
-.heading .headingcontent .block{
-  flex:0 0 100%;
+.heading .headingcontent .block {
+  flex: 0 0 100%;
   max-width: 100%;
   padding-left: 35px;
   border-left: 5px solid #66fcf1
 }
 
 
-.heading .headingcontent .block h1{
-  color:#ffffff;
-  font-size:  60px;
-  font-weight:600;
+.heading .headingcontent .block h1 {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 600;
   margin: 0;
   padding: 0;
 }
-.heading .headingcontent .block h4{
-  color:#ffffff;
-  font-size:  30px;
-  font-weight:400;
+
+.heading .headingcontent .block h4 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
   margin: 0;
   padding: 0;
 }
 
 /**********Project Gallary**********/
-.gallery{
+.gallery {
   background-color: #FFFFFF;
   padding: 70px 20px;
 }
@@ -57,15 +58,15 @@
   position: relative;
   overflow: hidden;
   text-align: center;
-  box-shadow:4px 4px 7px #666;
+  box-shadow: 4px 4px 7px #666;
   background-color: #111111;
 }
 
-.item:hover{
+.item:hover {
   cursor: pointer;
 }
 
-.item *{
+.item * {
   transition: all 0.35s ease-in-out;
 }
 
@@ -80,11 +81,11 @@
 .item h2 {
   font-size: 22px;
   font-weight: 600;
-  color:#ffffff;
+  color: #ffffff;
   padding-bottom: 5px;
 }
 
-.text{
+.text {
   width: 80%;
   height: 90%;
   position: absolute;
@@ -93,32 +94,33 @@
   color: #3ed6ab;
 }
 
-.text h3{
+.text h3 {
   color: #fff;
 }
 
-.item:hover .text{
+.item:hover .text {
   top: 25%;
 }
 
-.item:hover .button{
+.item:hover .button {
   bottom: 35%;
 }
 
-.item .button{
+.item .button {
   position: absolute;
   bottom: -100px;
   left: 25%;
   width: 50%;
-  border: 3px solid #3ed6ab ;
+  border: 3px solid #3ed6ab;
   padding: 15px;
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
   color: white;
 }
-.vbutton{
 
-  border: 3px solid #3ed6ab ;
+.vbutton {
+
+  border: 3px solid #3ed6ab;
   color: white;
   padding: 10px 15px;
   text-align: center;
@@ -129,9 +131,11 @@
 
 
 }
-.vp{
+
+.vp {
   color: #eeeeee;
 }
+
 .vbutton span {
   cursor: pointer;
   display: inline-block;
@@ -156,8 +160,10 @@
   opacity: 1;
   right: 0;
 }
-.vbutton:hover{
-  background-color: #3ed6ab; ;
+
+.vbutton:hover {
+  background-color: #3ed6ab;
+  ;
   color: #F5F5F5;
   color: black;
 }
@@ -169,14 +175,15 @@
   display: none;
   position: fixed;
   z-index: 1;
-  padding:100px 0;
+  padding: 100px 0;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
+
 .modal-content {
   background-color: #fefefe;
   margin: auto;
@@ -184,45 +191,50 @@
   width: 60%;
 }
 
-@media(max-width: 900px){
-.modal-content {
-  width: 80%;
-}
+@media(max-width: 900px) {
+  .modal-content {
+    width: 80%;
+  }
 }
 
-.scale{
+.scale {
   animation: scale 0.5s;
   animation-fill-mode: forwards;
 }
 
-@keyframes scale{
-  from{transform: scale(0);}
-  to{transform: scale(1);}
+@keyframes scale {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
 }
 
 
-#details{
+#details {
   padding: 30px;
   text-align: left;
   height: 100%;
 }
 
-#details *{
+#details * {
   transition: all .3s;
 }
 
-#title{
+#title {
   padding-bottom: 8px;
   font-size: 28px;
 }
 
-#info{
+#info {
   padding: 10px;
   font-size: 15px;
   border-top: 1px solid #aaa;
 }
 
-#members{
+#members {
   border-top: 1px solid #aaa;
   text-align: right;
   padding-top: 10px;
@@ -252,25 +264,26 @@
 
 /********Team*******/
 
-.board{
+.board {
   width: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 70px 30px 10px;
 }
-.board .title h1::before{
-left: 30%;
+
+.board .title h1::before {
+  left: 30%;
 }
 
-.board .member{
+.board .member {
   width: 250px;
   margin: 5px;
   background: #ffffff;
   padding: 20px 10px;
 }
 
-.board .member .member_img{
+.board .member .member_img {
   background: #e5e5e5;
   max-width: 150px;
   width: 100%;
@@ -282,33 +295,33 @@ left: 30%;
   cursor: pointer;
 }
 
-.board .member .member_img img{
+.board .member .member_img img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
 
-.board .member h3{
+.board .member h3 {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 2px;
-  margin: 15px 0 0px;
+  margin: 5px 0px;
   text-align: center;
 }
 
-.board .member h5{
+.board .member h5 {
   color: #00153d;
   font-weight: 400;
   font-size: 15px;
   text-align: center;
 }
 
-.board .member .member_img .social_media{
+.board .member .member_img .social_media {
   position: absolute;
   top: 5px;
   left: 5px;
-  background: rgba(0,0,0,0.65);
+  background: rgba(0, 0, 0, 0.65);
   width: 95%;
   height: 95%;
   border-radius: 50%;
@@ -319,29 +332,29 @@ left: 30%;
   transition: all 0.5s ease;
 }
 
-.board .member .member_img .social_media .item{
+.board .member .member_img .social_media .item {
   margin: 0 10px;
 }
 
-.board .member .member_img .social_media .fa{
+.board .member .member_img .social_media .fa {
   color: #3ed6ab;
   font-size: 20px;
 }
 
-.board .member .member_img:hover .social_media{
+.board .member .member_img:hover .social_media {
   transform: scale(1);
 }
 
-.others{
-background-color: #ffffff;
-padding:70px 0px 70px;
+.others {
+  background-color: #ffffff;
+  padding: 70px 0px 70px;
 }
 
-.others .title h1::before{
-left: 30%;
+.others .title h1::before {
+  left: 30%;
 }
 
-.others .teamcontent{
+.others .teamcontent {
   flex: 0 0 100%;
   max-width: 100%;
   display: flex;
@@ -350,80 +363,81 @@ left: 30%;
   padding: 10px;
 }
 
-.others .teamcontent .domains{
+.others .teamcontent .domains {
   background-color: #F5F7F9;
   padding: 30px;
-  flex: 0 0 calc(33% - 40px);
+  flex: 0 0 calc(25% - 40px);
   max-width: 0 0 calc(25% - 40px);
   margin-bottom: 30px;
   border-radius: 1px solid #eeeeee;
-  position:relative;
+  position: relative;
   border-radius: 5px;
-  margin:10px;
+  margin: 10px;
 }
 
 
-@media(max-width: 1035px){
-.others .teamcontent .domains{
-  flex: 0 0 calc(50% - 40px);
-  max-width: 0 0 calc(50% - 40px);
-}
-}
-
-@media(max-width: 550px){
-.others .teamcontent .domains{
-  flex: 0 0 calc(100% - 40px);
-  max-width: 0 0 calc(100% - 40px);
-}
+@media(max-width: 1035px) {
+  .others .teamcontent .domains {
+    flex: 0 0 calc(50% - 40px);
+    max-width: 0 0 calc(50% - 40px);
+  }
 }
 
-.others .teamcontent .domains::before{
-  content:'';
-  position:absolute;
+@media(max-width: 550px) {
+  .others .teamcontent .domains {
+    flex: 0 0 calc(100% - 40px);
+    max-width: 0 0 calc(100% - 40px);
+  }
+}
+
+.others .teamcontent .domains::before {
+  content: '';
+  position: absolute;
   height: 2px;
   background-color: #3ed6ab;
   bottom: 0px;
   width: 60px;
-  left:0px;
-  right:0px;
+  left: 0px;
+  right: 0px;
   margin: auto;
   transition: all .5s ease;
 }
 
-.others .teamcontent .domains:hover::before{
+.others .teamcontent .domains:hover::before {
   width: 100%;
 }
 
-.others .teamcontent .domains .icon{
-  height:60px;
+.others .teamcontent .domains .icon {
+  height: 60px;
   width: 60px;
   margin: 10px auto 10px;
   text-align: center;
 }
 
-.others .teamcontent .domains .icon .fa{
+.others .teamcontent .domains .icon .fa {
   font-size: 30px;
   color: #3ed6ab;
   line-height: 60px;
 }
 
-.others .teamcontent .domains h5{
+.others .teamcontent .domains h5 {
   bottom padding: 10px;
 
   text-align: center;
   font-size: 22px;
-  font-weight:600;
+  font-weight: 600;
   color: #000000;
-  margin:0;
+  margin: 0;
 }
 
-.others .teamcontent  .domains ul {
+.others .teamcontent .domains ul {
   color: #000000;
-  padding: 0 0 0 0 ;
-  list-style: none; /* Remove default bullets */
+  padding: 0 0 0 0;
+  list-style: none;
+  /* Remove default bullets */
 }
 
-.others .teamcontent  .domains ul li::before {
+.others .teamcontent .domains ul li::before {
   content: "\2022";
   color: #3ed6ab;
   display: inline-block;
@@ -437,34 +451,39 @@ left: 30%;
 
 
 .thankyou {
- background-color: #F5F7F9;
- height: 100vh;
+  background-color: #F5F7F9;
+  height: 100vh;
 }
 
-.thankyou .content{
+.thankyou .content {
   text-align: center;
-  padding:30vh 2vw;
+  padding: 30vh 2vw;
 }
-.thankyou h1{
+
+.thankyou h1 {
   font-size: 8vw;
-  color:  #00153d;
+  color: #00153d;
 }
-.thankyou span{
-  color:  #3ed6ab;
+
+.thankyou span {
+  color: #3ed6ab;
   font-size: 8vw;
   font-weight: 600;
 }
-.thankyou p{
-  color:  #000000;
+
+.thankyou p {
+  color: #000000;
   font-size: 16px;
   font-weight: 400;
 }
-.thankyou .back{
-padding-top: 50px;
-  }
-.thankyou .back a{
+
+.thankyou .back {
+  padding-top: 50px;
+}
+
+.thankyou .back a {
   border-radius: 4px;
-  color:#000000;
+  color: #000000;
   border: 4px solid #3ed6ab;
   padding: 12px 55px;
   text-decoration: none;
@@ -473,9 +492,11 @@ padding-top: 50px;
   font-weight: 600;
   transition: all .5s ease;
   background-color: transparent;
-  }
+}
 
-.thankyou .back a:hover{
+.thankyou .back a:hover {
 
   background-color: #3ed6ab;
-  }
+}
+}
+}
