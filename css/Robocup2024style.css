@@ -2,8 +2,6 @@
     text-align: center;
     background-color: white;
     padding: 10px 10px 50px 10px;
-    
-
 }
 
 .info_space h1 {
@@ -23,7 +21,7 @@
 .info_space p {
     margin: 0px 30px;
     padding-bottom: 20px;
-    font-size: 15px;
+    font-size: 1.2em;
     text-align: justify;
     justify-content: center;
 }
