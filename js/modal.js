@@ -37,7 +37,7 @@ var modalInfo = {
     title:"Line follower Bot",
     members:"",
     info:"The line follower robot is an automated vehicle that follows a visual black line or path on the surface. This visual line is a path on which the line follower robot moves. It uses a black line on a white surface, or you can also adjust it as a white line on a black surface as per your need.",
-    link="#",
+    link:"#",
   },
 
   20247:{
